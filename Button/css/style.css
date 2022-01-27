@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+body > div {
+    margin: auto;
+    display: flex;
+}
+
+/* button */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px 48px;
+    border-radius: 50px;
+    min-width: 160px;
+    user-select: none;
+    font-size: 18px;
+    user-select: none;
+}
+
+.btn + .btn {
+    margin-left: 8px;
+}
+
+.btn--size-s {
+    padding: 6px 32px;
+}
+
+.btn--size-l {
+    padding: 14px 56px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn--success {
+    background-color: #71be34;
+}
+
+.btn--warn {
+    background-color: #ebd726;
+}
+
+.btn--error {
+    background-color: #ca3f46;
+} 
+
+.btn--disable {
+    opacity: 0.5 !important;
+}
+
+.btn--disable:hover {
+    cursor:default;
+}
